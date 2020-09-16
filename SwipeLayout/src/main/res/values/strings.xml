@@ -1,0 +1,4 @@
+<resources>
+    <string name="header_fresh">下拉刷新</string>
+    <string name="footer_loading">上拉加载</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundImageView">
+        <attr name="leftTopRadius" format="integer" />
+        <attr name="rightTopRadius" format="integer" />
+        <attr name="rightBottomRadius" format="integer" />
+        <attr name="leftBottomRadius" format="integer" />
+        <attr name="radius" format="integer" />
+        <attr name="isCircle" format="boolean"/>
+    </declare-styleable>
+</resources>

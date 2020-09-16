@@ -1,0 +1,3 @@
+include ':SwipeLayout'
+include ':app'
+rootProject.name = "SwipeLayout"
