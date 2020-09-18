@@ -3,7 +3,9 @@ RecyclerView出现之前，大家基本都是使用的ListView，通过ListView�
 
 ## 第一步：自定义SwipeLayout作为容器
 首先我们先剖析一个需要实现的布局，不出意外应该是下面这个样子：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200918165540514.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2Mzc4ODM2,size_16,color_FFFFFF,t_70#pic_center)
+
 根据上图可知：上拉加载和下拉刷新，正常情况下用户是看不到的，只有用户在滑动手机屏幕的过程中，到达了RecyclerView的顶部/底部时才会显示相应的视图。所以我们先自定义SwipeLayout类，继承LinearLayout布局，然后添加headerView、recyclerView、footerView三个布局，并且其中子布局的RecyclerView的高度应该与ViewGroup保持一致。
 ```
 class SwipeLayout(ctx: Context, attr: AttributeSet) : LinearLayout(ctx, attr) {
