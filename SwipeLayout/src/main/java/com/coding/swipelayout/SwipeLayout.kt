@@ -101,7 +101,7 @@ class SwipeLayout(ctx: Context, attr: AttributeSet) : LinearLayout(ctx, attr) {
             layoutWidth = width
             Log.d(TAG, "width:$layoutWidth height:$layoutHeight")
             addView(headerView, LayoutParams(LayoutParams.MATCH_PARENT, HEADER_HEIGHT))
-            addView(contentRv, 1, LayoutParams(LayoutParams.MATCH_PARENT, layoutHeight))
+            addView(contentRv, LayoutParams(LayoutParams.MATCH_PARENT, layoutHeight))
             addView(footerView, LayoutParams(LayoutParams.MATCH_PARENT, FOOTER_HEIGHT))
         }
     }
