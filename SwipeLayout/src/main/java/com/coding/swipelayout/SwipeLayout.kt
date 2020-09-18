@@ -140,10 +140,10 @@ class SwipeLayout(ctx: Context, attr: AttributeSet) : LinearLayout(ctx, attr) {
                  * */
                 if ((abs(scrollY) >= MAX_SCROLL_DISTANCE / 2) and !isLoadData) {
                     isLoadData = true
-                    if (rvIsArriveDown) {
-                        startLoadMore()
-                    } else if (rvIsArriveTop) {
+                    if (rvIsArriveTop) {
                         startRefresh()
+                    } else if (rvIsArriveDown) {
+                        startLoadMore()
                     }
                 } else {
                     smoothResetScroll()
