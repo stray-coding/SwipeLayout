@@ -7,37 +7,54 @@
     tools:context=".MainActivity">
 
     <com.coding.swipelayout.SwipeLayout
+        android:id="@+id/sl_pic"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-    <!--    <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:overScrollMode="never"
-            android:scrollbars="none">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="-50dp"
-                    android:gravity="center"
-                    android:text="我是头" />
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="下拉刷新" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="900dp"
-                    android:gravity="center"
-                    android:text="我是中间"/>
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb_load_more"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="上拉加载" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="-50dp"
-                    android:gravity="center"
-                    android:text="我是尾部" />
-            </LinearLayout>
-        </ScrollView>-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="执行下拉刷新" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_load_more"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="执行上拉加载" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_change_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="改变下拉视图" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_change_load_more"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="改变上拉视图" />
+
+    </LinearLayout>
+
 
 </FrameLayout>
